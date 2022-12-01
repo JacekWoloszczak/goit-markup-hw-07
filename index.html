@@ -87,59 +87,65 @@
     </header>
 
     <main>
-      <div class="primer-contener">
-        <h1 class="primar-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="style-clic-primary" data-modal-open>Zamów usługe</button>
+      <div class="primar-container">
+        <h1 class="primar-container__head">
+          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+        </h1>
+        <button type="submit" class="primar-container__button" data-modal-open>
+          Zamów usługe
+        </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="modal-button" data-modal-close>
-              <div class="button-x"></div>
+            <button class="modal__button-exit" data-modal-close>
+              <div class="modal__sign"></div>
             </button>
-            <h1 class="header-modal">Zostaw swoje dane w formularzu poniżej</h1>
-            <form name="modal-formular">
-              <fieldset class="field-modal">
-                <label class="label-modal" for="username"> Imię</label>
+            <h1 class="modal__head">Zostaw swoje dane w formularzu poniżej</h1>
+            <form name="modal__form">
+              <fieldset class="modal__field">
+                <label class="modal__label" for="username"> Imię</label>
 
                 <input
-                  class="input-modal"
+                  class="modal__input"
                   type="text"
                   name="username"
                   id="username"
                 />
-                <svg width="12" height="12" class="icon-modal">
+                <svg width="12" height="12" class="modal__icon">
                   <use href="./images/icons.svg#icon-icon-user"></use>
                 </svg>
               </fieldset>
-              <fieldset class="field-modal">
-                <label class="label-modal" for="userphone"> Telefon</label>
+              <fieldset class="modal__field">
+                <label class="modal__label" for="userphone"> Telefon</label>
 
                 <input
-                  class="input-modal"
+                  class="modal__input"
                   type="tel"
                   name="userphone"
                   id="userphone"
                 />
-                <svg width="13" height="13" class="icon-modal">
+                <svg width="13" height="13" class="modal__icon">
                   <use href="./images/icons.svg#icon-icon-contact"></use>
                 </svg>
               </fieldset>
-              <fieldset class="field-modal">
-                <label class="label-modal" for="usermail"> Email</label>
+              <fieldset class="modal__field">
+                <label class="modal__label" for="usermail"> Email</label>
 
                 <input
-                  class="input-modal"
+                  class="modal__input"
                   type="email"
                   name="usermail"
                   id="usermail"
                 />
-                <svg width="15" height="12" class="icon-modal">
+                <svg width="15" height="12" class="modal__icon">
                   <use href="./images/icons.svg#icon-icon-mail-contact"></use>
                 </svg>
               </fieldset>
 
-              <label class="label-area" for="commentary"> Komentarz</label>
+              <label class="modal__label-textarea" for="commentary">
+                Komentarz</label
+              >
               <textarea
-                class="area-modal"
+                class="modal__textarea"
                 name="commentary"
                 placeholder="Wprowadź tekst"
               ></textarea>
@@ -148,23 +154,23 @@
                 type="checkbox"
                 name="legal"
                 id="legal"
-                class="input-check"
+                class="modal__checkbox-input"
                 value="legal"
                 autocomplete="off"
                 checked
               />
-              <label class="label-check" for="legal">
-                <div class="artifical-checkbox">
-                  <svg class="icon-modal-check" width="11" height="8">
+              <label class="modal__label-checkbox" for="legal">
+                <div class="modal__checkbox">
+                  <svg class="modal__icon--check" width="11" height="8">
                     <use href="./images/icons.svg#icon-icon-check"></use>
                   </svg>
                 </div>
                 Oświadczam iż akceptuję&nbsp
-                <a class="legal-anchor" href="#">Regulamin</a> &nbspi&nbsp
-                <a class="legal-anchor" href="#">Politykę Prywatności</a>
+                <a class="modal__legal-link" href="#">Regulamin</a> &nbspi&nbsp
+                <a class="modal__legal-link" href="#">Politykę Prywatności</a>
               </label>
 
-              <button class="end-btn" type="submit">Wyślij</button>
+              <button class="modal__btn-end" type="submit">Wyślij</button>
             </form>
           </div>
         </div>

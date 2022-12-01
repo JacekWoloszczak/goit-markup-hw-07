@@ -4,23 +4,31 @@ body {
   margin: 0;
   padding: 0;
 }
-.top-head {
-  border-bottom: 1px solid #ececec;
-}
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.order {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 79px;
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==============Nagłówek=============================== */
+.page-header {
   border-bottom: 1px solid #ececec;
 }
-.order-portfolio {
+
+.page-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,22 +36,22 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.flex-menu-logo {
+.page-header__logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.webstudio {
+.page-header__logo-label {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   height: 31px;
 }
-.logo {
+.page-header__logo-link {
   display: flex;
   text-decoration: none;
 }
-.simple-Web {
+.page-header__logo-description {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -54,7 +62,7 @@ ul {
   color: #2196f3;
 }
 
-.simple-Studio {
+.page-header__logo-description--second {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -63,7 +71,9 @@ ul {
   letter-spacing: 0.03em;
   color: black;
 }
-.menu {
+
+/* =================Nawigacja======================== */
+.navigation__menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +81,7 @@ ul {
   padding: 0;
 }
 
-.menu li {
+.navigation__menu-item {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -80,18 +90,17 @@ ul {
   list-style-type: none;
 }
 
-.menu li:first-child {
+.navigation__menu .navigation__menu-item:first-child {
   margin-left: 93px;
 }
-
-.menu li:nth-child(2) {
+.navigation__menu .navigation__menu-item:nth-child(2) {
   margin-left: 46px;
 }
 
-.menu li:last-child {
+.navigation__menu .navigation__menu-item:last-child {
   margin-left: 46px;
 }
-.menu li a {
+.navigation__menu .navigation__menu-item .navigation__menu-link {
   position: relative;
   text-decoration: none;
   color: #212121;
@@ -100,10 +109,12 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu li a:hover {
+.navigation__menu .navigation__menu-item .navigation__menu-link:hover {
   color: #2196f3;
 }
-.menu > .agent > a::after {
+.navigation__menu
+  .navigation__menu-item--primary
+  .navigation__menu-link::after {
   position: absolute;
   content: "";
   background-image: url(../images/hover.svg);
@@ -114,7 +125,9 @@ ul {
   left: 0px;
 }
 
-.menu > .portfolio-portfolio > a::after {
+.navigation__menu
+  .navigation__menu-item--secondary
+  .navigation__menu-link::after {
   position: absolute;
   content: "";
   background-image: url(../images/hover.svg);
@@ -124,11 +137,11 @@ ul {
   top: 45px;
   left: 2px;
 }
-
-.flex-address {
+/* ==================Nawigacja-kontakt=================== */
+.address-header {
   display: flex;
 }
-.info {
+.address-header__info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +153,18 @@ ul {
   margin: 0;
   padding: 0;
 }
-.list-info-b {
+
+.address-header__list-envelope {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-header__list-phone {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,72 +175,61 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info .li {
+.address-header .address-header__list-envelope .address-header__list-phone {
   list-style-type: none;
 }
-.list-info-a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 30px;
-  cursor: pointer;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.info .list-info-a:hover a {
-  color: #2196f3;
-}
-
-.info .list-info-a:hover use {
-  fill: #2196f3;
-}
-
-.info .list-info-b:hover a {
-  color: #2196f3;
-}
-
-.info .list-info-b:hover use {
-  fill: #2196f3;
-}
-.list-link-a {
+.address-header__link-mail {
   text-decoration: none;
   color: #757575;
 }
-.list-link-b {
+
+.address-header
+  .address-header__list-envelope:hover
+  .address-header__link-mail {
+  color: #2196f3;
+}
+
+.address-header__info
+  .address-header__list-envelope:hover
+  .address-header__icon-envelope {
+  fill: #2196f3;
+}
+
+.address-header__info
+  .address-header__list-phone:hover
+  .address-header__link-phone {
+  color: #2196f3;
+}
+
+.address-header__info
+  .address-header__list-phone:hover:hover
+  .address-header__icon-phone {
+  fill: #2196f3;
+}
+
+.address-header__link-phone {
   text-decoration: none;
   color: #757575;
 }
-.svg-envelope {
+.address-header__svg-envelope {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
 }
-.svg-phone {
+.address-header__svg-phone {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
 }
-.icon-envelope {
+.address-header__icon-envelope {
   fill: #757575;
 }
 
-.icon-phone {
+.address-header__icon-phone {
   fill: #757575;
-}
-p {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
 }
 
 .porzadkowy {

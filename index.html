@@ -16,48 +16,67 @@
     />
   </head>
   <body>
-    <header class="top-head">
+    <header class="page-header">
       <div class="container">
-        <div class="order">
-          <div class="flex-menu-logo">
-            <div class="webstudio">
-              <a href="index.html" class="logo"
-                ><span class="simple-Web">Web</span>
-                <span class="simple-Studio">Studio</span></a
+        <div class="page-header__container">
+          <div class="page-header__logo">
+            <div class="page-header__logo-label">
+              <a href="index.html" class="page-header__logo-link"
+                ><span class="page-header__logo-description">Web</span>
+                <span class="page-header__logo-description--second"
+                  >Studio</span
+                ></a
               >
             </div>
-            <nav class="top">
-              <ul class="menu">
-                <li class="agent"><a href="index.html">Agencja</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#">Kontakt</a></li>
+            <nav class="navigation">
+              <ul class="navigation__menu">
+                <li
+                  class="navigation__menu-item navigation__menu-item--primary"
+                >
+                  <a class="navigation__menu-link" href="index.html">Agencja</a>
+                </li>
+                <li class="navigation__menu-item">
+                  <a class="navigation__menu-link" href="portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="navigation__menu-item">
+                  <a class="navigation__menu-link" href="#">Kontakt</a>
+                </li>
               </ul>
             </nav>
           </div>
-          <address class="flex-address">
-            <ul class="info">
-              <li class="list-info-a">
-                <svg width="16" height="12" class="svg-envelope">
+          <address class="address-header">
+            <ul class="address-header__info">
+              <li class="address-header__list-envelope">
+                <svg
+                  width="16"
+                  height="12"
+                  class="address-header__svg-envelope"
+                >
                   <use
-                    class="icon-envelope"
+                    class="address-header__icon-envelope"
                     href="images/icons.svg#icon-envelope"
                   ></use>
                 </svg>
 
-                <a href="mailto:info@devstudio.com" class="list-link-a">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="address-header__link-mail"
+                >
                   info@devstudio.com</a
                 >
               </li>
 
-              <li class="list-info-b">
-                <svg width="10" height="16" class="svg-phone">
+              <li class="address-header__list-phone">
+                <svg width="10" height="16" class="address-header__svg-phone">
                   <use
-                    class="icon-phone"
+                    class="address-header__icon-phone"
                     href="images/icons.svg#icon-smartphone"
                   ></use>
                 </svg>
 
-                <a href="tel:+48111111111" class="list-link-b"
+                <a href="tel:+48111111111" class="address-header__link-phone"
                   >+48 111 111 111</a
                 >
               </li>
@@ -67,7 +86,7 @@
       </div>
     </header>
 
-    <main class="paint">
+    <main>
       <div class="primer-contener">
         <h1 class="primar-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button class="style-clic-primary" data-modal-open>Zamów usługe</button>

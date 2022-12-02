@@ -15,18 +15,22 @@ ul,
   margin: 0;
   padding: 0;
 }
-
+.page-images__head,
 .primar-container__head,
 .modal__head,
-h2,
+.team__head,
+.team__head-name,
 .picture__head,
 .footer-social-links__head,
-.newsletter__head {
+.newsletter__head,
+.primary-text__lorem_head {
   margin: 0;
   padding: 0;
 }
 
 p,
+.page-images__paragraph,
+.primary-text__paragraph,
 .picture__paragraph,
 .picture__description {
   margin: 0;
@@ -652,7 +656,7 @@ p,
   margin-top: 30px;
 }
 
-.lorem {
+.primary-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -660,14 +664,14 @@ p,
   margin-bottom: 30px;
 }
 
-.first-lorem,
-.second-lorem,
-.third-lorem,
-.fourth-lorem {
+.container--first-lorem,
+.container--second-lorem,
+.container--third-lorem,
+.container--fourth-lorem {
   background-color: #f5f4fa;
 }
 
-.first-lorem {
+.container--first-lorem {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -676,7 +680,7 @@ p,
   padding: 20px 0;
 }
 
-.second-lorem {
+.container--second-lorem {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -686,7 +690,7 @@ p,
   padding-bottom: 25px;
 }
 
-.third-lorem {
+.container--third-lorem {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -696,7 +700,7 @@ p,
   padding-bottom: 25px;
 }
 
-.fourth-lorem {
+.container--fourth-lorem {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -704,7 +708,7 @@ p,
   height: 120px;
   padding: 25px 0;
 }
-.lorem {
+.primary-text__lorem_head {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -713,7 +717,7 @@ p,
   text-transform: uppercase;
   color: #212121;
 }
-.lorem-list {
+.primary-text__list {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -721,21 +725,20 @@ p,
   margin: 0;
   padding: 0;
 }
-.lorem-list li {
+.primary-text__list .primary-text__list-item {
   list-style-type: none;
 }
-
-.lorem-list li:nth-child(2) {
+.primary-text__list .primary-text__list-item:nth-child(2) {
   margin-left: 30px;
 }
 
-.lorem-list li:nth-child(3) {
+.primary-text__list .primary-text__list-item:nth-child(3) {
   margin-left: 30px;
 }
-.lorem-list li:nth-child(4) {
+.primary-text__list .primary-text__list-item:nth-child(4) {
   margin-left: 30px;
 }
-.lorem-text {
+.primary-text__paragraph {
   text-align: justify;
   flex-direction: row;
   font-style: normal;
@@ -746,20 +749,20 @@ p,
   color: #757575;
   margin: 0;
 }
-.primary-images {
+.page-images__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-.primary-images li {
+.page-images__list .page-images__list-item {
   position: relative;
   list-style-type: none;
   height: 294px;
   background-color: rgba (47, 48, 58, 0.8);
   background-position: bottom;
 }
-.primary-images-img-text {
+.page-images__paragraph {
   display: block;
   width: 370px;
   height: 70px;
@@ -775,7 +778,7 @@ p,
   left: 0px;
 }
 
-.John-Doe {
+.team__head-name {
   text-align: center;
   margin-top: 30px;
   font-style: normal;
@@ -786,32 +789,44 @@ p,
   letter-spacing: 0.03em;
   color: #212121;
 }
-.wewnetrzna-sekcja-zespol {
+.inner-section__team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
-.team {
+
+.team__head {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  color: #212121;
+}
+.team__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
 }
-.team li {
+.team__list .team__list-item {
   width: 270px;
   list-style-type: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.frame-our-team {
+.team__figure {
   margin: 0 auto;
   gap: 30px;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   background-color: white;
 }
-.profession {
+.team__paragraph {
   text-align: center;
   margin-top: 10px;
   font-style: normal;
@@ -822,7 +837,13 @@ p,
   color: #757575;
 }
 
-.hfont {
+.team__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.page-images__head {
   text-align: center;
   font-style: normal;
   font-weight: 700;
@@ -840,7 +861,7 @@ p,
   margin: 0 auto;
 }
 
-.wewnetrzna-sekcja {
+.inner-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -855,14 +876,7 @@ p,
   padding-bottom: 50px;
 }
 
-.inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.social-link {
+.team__social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -878,36 +892,36 @@ p,
 .footer-social-links__list {
   gap: 10px;
 }
-.social-link:hover {
+.team__social-link:hover {
   background-color: #2196f3;
 }
 
-.icon-insta {
+.team__icon {
   fill: #afb1b8;
 }
 
-.inner > .social-link:hover use {
+.team__container > .team__social-link:hover .team__icon {
   fill: white;
 }
-.our-clients {
+.clients {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.head-our-clients {
+.clients__head {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
-.list-of-clients {
+.clients__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-.clients-link {
+.clients__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -922,21 +936,16 @@ p,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* /* .clients-link:hover {
+/* /* .clients__link:hover {
   border: 1px solid #2196f3;
 /* } */
-.yaco,
-.tagline-here,
-.company,
-.foster,
-.brand,
-.tagline {
+.clients__icon {
   fill: #afb1b8;
 }
-.list-of-clients > li > .clients-link:hover {
+.clients__list > .clients__list-item > .clients__link:hover {
   border: 1px solid #2196f3;
 }
-.list-of-clients > li > .clients-link:hover use {
+.clients__list > .clients__list-item > .clients__link:hover .clients__icon {
   fill: #2196f3;
 }
 /* =========================================================== */
